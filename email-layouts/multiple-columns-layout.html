@@ -78,6 +78,21 @@
       /* Universal styles for links and stuff */
 
       /* Responsive styles */
+      @media screen and (max-width: 600px) {
+        .mobile {
+          width: 100% !important;
+        }
+
+        .text-block {
+          width: 100% !important;
+          max-width: 100% !important;
+          font-size: 20px !important;
+        }
+
+        .text-block__heading {
+          font-size: 24px !important;
+        }
+      }
     </style>
   </head>
 
@@ -92,6 +107,7 @@
       <tr>
         <td>
           <table
+            class="mobile"
             style="
               max-width: 600px;
               margin: 0 auto;
@@ -145,7 +161,7 @@
 
             <!-- Body copy: -->
             <tr>
-              <td>
+              <td style="padding: 24px 0 48px 0">
                 <table
                   role="presentation"
                   width="100%"
@@ -157,9 +173,9 @@
                     <td>
                       <!-- 1st column: -->
                       <table
+                        class="text-block"
                         style="
                           max-width: 300px;
-                          margin: 24px auto 48px auto;
                           color: #333;
                           font-family: Helvetica, Arial, sans-serif;
                           font-size: 18px;
@@ -174,7 +190,12 @@
                       >
                         <tr>
                           <td style="width: 50%; padding: 0 8px">
-                            <h2 style="font-size: 20px">Some sub-heading</h2>
+                            <h2
+                              class="text-block__heading"
+                              style="font-size: 20px"
+                            >
+                              Some sub-heading
+                            </h2>
 
                             <p>
                               Lorem ipsum dolor sit amet, consectetur
@@ -189,9 +210,9 @@
 
                       <!-- 2nd column: -->
                       <table
+                        class="text-block"
                         style="
                           max-width: 300px;
-                          margin: 24px auto 48px auto;
                           color: #333;
                           font-family: Helvetica, Arial, sans-serif;
                           font-size: 18px;
@@ -206,7 +227,12 @@
                       >
                         <tr>
                           <td style="width: 50%; padding: 0 8px">
-                            <h2 style="font-size: 20px">Another sub-heading</h2>
+                            <h2
+                              class="text-block__heading"
+                              style="font-size: 20px"
+                            >
+                              Another sub-heading
+                            </h2>
 
                             <p>
                               Lorem ipsum dolor sit amet, consectetur
